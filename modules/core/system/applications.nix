@@ -4,5 +4,6 @@
     # VPN
     protonvpn-gui
     alacritty
+    nitrogen
   ];
 }

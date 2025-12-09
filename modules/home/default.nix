@@ -7,6 +7,7 @@
     ./apps/programs.nix
     ./git.nix
     ./apps/btop.nix
+    ./apps/picom.nix
   ];
 
   home.username = "stacks";
