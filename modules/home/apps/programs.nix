@@ -7,7 +7,7 @@
     nixpkgs-fmt
     nodejs
     gcc
-    wofi
+    cmatrix
     nitch
     rofi
     pcmanfm

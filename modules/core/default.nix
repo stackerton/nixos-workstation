@@ -30,7 +30,7 @@
     #    ./system/shell.nix
     #  ./system/sudo.nix
     ./system/users.nix
-    ./system/hyprland.nix
+    #    ./system/hyprland.nix
     ./system/storage.nix
     ./system/browsers.nix
     ./system/brave.nix
