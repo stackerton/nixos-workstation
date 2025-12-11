@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./modules/core
       ./modules/media
+      ./modules/core/services/oxwm
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -17,6 +18,7 @@
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
     targets.plymouth.enable = false;
+    #    targets.libreoffice.enable = false;
   };
 
   environment.systemPackages = with pkgs; [

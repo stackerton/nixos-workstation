@@ -23,9 +23,13 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    oxwm = {
+      url = "github:tonybanters/oxwm";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, chaotic, nur, ... }: {
+  outputs = { self, nixpkgs, home-manager, stylix, chaotic, nur, oxwm, ... }: {
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -33,6 +37,7 @@
         ./configuration.nix
         chaotic.nixosModules.default
         nur.modules.nixos.default
+        oxwm.nixosModules.default
         home-manager.nixosModules.home-manager
         {
           home-manager = {

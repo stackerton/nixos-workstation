@@ -2,6 +2,7 @@
 
   home.packages = with pkgs; [
     neovim
+    alacritty
     ripgrep
     nil
     nixpkgs-fmt
@@ -21,6 +22,6 @@
       ];
       text = ''exec "${pkgs.nix-search-tv.src}/nixpkgs.sh" "$@"'';
     })
-    libreoffice
+    libreoffice-qt-fresh
   ];
 }

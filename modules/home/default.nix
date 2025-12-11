@@ -4,10 +4,12 @@
     ./theming.nix
     ./gaming.nix
     ./configs.nix
-    ./apps/programs.nix
     ./git.nix
+
     ./apps/btop.nix
     ./apps/picom.nix
+    ./apps/programs.nix
+    ./apps/dunst.nix
   ];
 
   home.username = "stacks";
@@ -19,6 +21,7 @@
       btw = "echo i use hyprland btw";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#nixos-btw";
       vim = "nvim";
+      ff = "fastfetch";
     };
     initExtra = ''
       export PS1='\[\e[38;5;76m\]\u\[\e[0m\] in \[\e[38;5;32m\]\w\[\e[0m\] \\$ '

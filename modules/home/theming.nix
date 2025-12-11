@@ -18,10 +18,10 @@
     };
   };
 
-  wayland.windowManager.hyprland.settings = {
-    exec-once = [
-      "gsettings set org.gnome.desktop.interface cursor-theme 'Nordzy-cursors-white'"
-      "gsettings set org.gnome.desktop.interface cursor-size 24"
-    ];
-  };
+  #  wayland.windowManager.hyprland.settings = {
+  #    exec-once = [
+  #      "gsettings set org.gnome.desktop.interface cursor-theme 'Nordzy-cursors-white'"
+  #      "gsettings set org.gnome.desktop.interface cursor-size 24"
+  #    ];
+  #  };
 }
