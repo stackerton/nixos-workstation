@@ -34,6 +34,8 @@
     ./system/storage.nix
     ./system/browsers.nix
     ./system/brave.nix
-    ./system/podman.nix
+    #    ./system/podman.nix
+    ./system/virtualisation.nix
+    ./system/steam.nix
   ];
 }
